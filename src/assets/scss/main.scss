@@ -1,0 +1,107 @@
+@import 'utils/libs';
+@import 'utils/vars';
+@import 'utils/mixins';
+@import 'utils/fonts';
+
+
+html {
+	color: $main-font-color;
+	font-size: $main-font-size;
+	height: 100%;
+	line-height: $main-line-height;
+	@media screen and (max-width: $desktop-width) {
+		font-size: 16px;
+	}
+	@media screen and (max-width: $table-width) {
+		font-size: 15px;
+	}
+	@media screen and (max-width: $phone-width) {
+		font-size: 14px;
+	}
+}
+
+body {
+	background: #e7dfe2;
+	font-family: $main-font;
+	font-size: $main-font-size;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-weight: $main-font-weight;
+	margin: 0;
+	padding: 0;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul,
+li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+section,
+.section {
+	padding: 40px 0;
+	position: relative;
+	@media screen and (max-width: $sm-desktop-width) {
+		padding: 36px 0;
+	}
+	@media screen and (max-width: $table-width) {
+		padding: 28px 0;
+	}
+	@media screen and (max-width: $phone-width) {
+		padding: 20px 0;
+	}
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	min-height: 100vh;
+	min-width: 100vh;
+}
+
+.content-wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.container {
+	flex: 0 0 auto;
+	margin: 0 auto;
+	max-width: $desktop-width;
+	position: relative;
+	width: 100%;
+	@media screen and (max-width: $sm-desktop-width) {
+		max-width: $table-width;
+	}
+	@media screen and (max-width: $table-width) {
+		max-width: $phone-width;
+	}
+	@media screen and (max-width: $phone-width) {
+		max-width: $sm-phone-width;
+	}
+}
+
+// Modules:
+// example: @import "modules/my-module.scss";

@@ -1,0 +1,10 @@
+# Created by .ignore support plugin (hsz.mobi)
+/public/
+node_modules/
+.idea/.gitignore
+.idea/aws.xml
+.idea/codeStyles/
+.idea/modules.xml
+.idea/nobl_west_valley.iml
+.idea/watcherTasks.xml
+.stylelintrc
